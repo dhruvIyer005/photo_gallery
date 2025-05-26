@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CollegeTips Photo Gallery ✨</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <h1 class="title">CollegeTips Gallery ✨</h1>
+        <p class="subtitle">
+          Dive into our world of creativity, teamwork, and endless fun!
+        </p>
+      </header>
+
+      <!-- Category Filter -->
+      <div class="filter-container">
+        <button class="filter-btn active" data-category="all">
+          <span class="emoji">🌟</span> All
+        </button>
+        <button class="filter-btn" data-category="team-vibes">
+          <span class="emoji">🤝</span> Team Vibes
+        </button>
+        <button class="filter-btn" data-category="creative-campaigns">
+          <span class="emoji">🎨</span> Creative Campaigns
+        </button>
+        <button class="filter-btn" data-category="work-play">
+          <span class="emoji">🥳</span> Work Hard, Play Hard
+        </button>
+        <button class="filter-btn" data-category="behind-scenes">
+          <span class="emoji">🎥</span> Behind-The-Scenes
+        </button>
+      </div>
+
+      <!-- Photo Grid -->
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Photo 1 -->
+        <div class="photo-card" data-category="team-vibes">
+          <div class="photo-container">
+            <img
+              src="https://www.collegetips.in/images/lf2.jpg"
+              alt="Team brainstorming session"
+              class="photo-img"
+            />
+            <div class="photo-overlay">
+              <div class="photo-content">
+                <span class="category-badge">
+                  <span class="emoji">🤝</span> Team Vibes
+                </span>
+                <h3 class="photo-title">Creative Minds at Work</h3>
+                <p class="photo-description">
+                  Our amazing team brainstorming the next big idea!
+                </p>
+                <div class="photo-actions">
+                  <div class="likes">
+                    <button class="action-btn like-btn" data-likes="127">
+                      <i class="far fa-heart"></i>
+                      <span class="like-count">0</span>
+                    </button>
+                  </div>
+                  <div class="action-buttons">
+                    <button class="action-btn">
+                      <i class="fas fa-share"></i>
+                    </button>
+                    <button class="action-btn">
+                      <i class="fas fa-download"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 2 -->
+        <div class="photo-card" data-category="creative-campaigns">
+          <div class="photo-container">
+            <img
+              src="https://www.collegetips.in/images/chooseus-image-3.jpg"
+              alt="Social media campaign design"
+              class="photo-img"
+            />
+            <div class="photo-overlay">
+              <div class="photo-content">
+                <span class="category-badge">
+                  <span class="emoji">🎨</span> Creative Campaigns
+                </span>
+                <h3 class="photo-title">Campaign Magic</h3>
+                <p class="photo-description">
+                  Behind the scenes of our viral social media campaign
+                </p>
+                <div class="photo-actions">
+                  <div class="likes">
+                    <button class="action-btn like-btn" data-likes="89">
+                      <i class="far fa-heart"></i>
+                      <span class="like-count">0</span>
+                    </button>
+                  </div>
+                  <div class="action-buttons">
+                    <button class="action-btn">
+                      <i class="fas fa-share"></i>
+                    </button>
+                    <button class="action-btn">
+                      <i class="fas fa-download"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 3 -->
+        <div class="photo-card" data-category="work-play">
+          <div class="photo-container">
+            <img
+              src="https://www.collegetips.in/images/chooseus-image-2.jpg"
+              alt="Team celebration party"
+              class="photo-img"
+            />
+            <div class="photo-overlay">
+              <div class="photo-content">
+                <span class="category-badge">
+                  <span class="emoji">🥳</span> Work Hard, Play Hard
+                </span>
+                <h3 class="photo-title">Victory Celebration</h3>
+                <p class="photo-description">
+                  Celebrating another successful project launch!
+                </p>
+                <div class="photo-actions">
+                  <div class="likes">
+                    <button class="action-btn like-btn" data-likes="203">
+                      <i class="far fa-heart"></i>
+                      <span class="like-count">0</span>
+                    </button>
+                  </div>
+                  <div class="action-buttons">
+                    <button class="action-btn">
+                      <i class="fas fa-share"></i>
+                    </button>
+                    <button class="action-btn">
+                      <i class="fas fa-download"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 4 -->
+        <div class="photo-card" data-category="behind-scenes">
+          <div class="photo-container">
+            <img
+              src="https://www.collegetips.in/images/mig14.jpg"
+              alt="Video production setup"
+              class="photo-img"
+            />
+            <div class="photo-overlay">
+              <div class="photo-content">
+                <span class="category-badge">
+                  <span class="emoji">🎥</span> Behind-The-Scenes
+                </span>
+                <h3 class="photo-title">Lights, Camera, Action!</h3>
+                <p class="photo-description">
+                  Setting up for our latest video content
+                </p>
+                <div class="photo-actions">
+                  <div class="likes">
+                    <button class="action-btn like-btn" data-likes="156">
+                      <i class="far fa-heart"></i>
+                      <span class="like-count">0</span>
+                    </button>
+                  </div>
+                  <div class="action-buttons">
+                    <button class="action-btn">
+                      <i class="fas fa-share"></i>
+                    </button>
+                    <button class="action-btn">
+                      <i class="fas fa-download"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 5 -->
+        <div class="photo-card" data-category="team-vibes">
+          <div class="photo-container">
+            <img
+              src="https://www.collegetips.in/images/lf40.jpeg"
+              alt="Team building activity"
+              class="photo-img"
+            />
+            <div class="photo-overlay">
+              <div class="photo-content">
+                <span class="category-badge">
+                  <span class="emoji">🤝</span> Team Vibes
+                </span>
+                <h3 class="photo-title">Squad Goals</h3>
+                <p class="photo-description">
+                  Team building activities that actually work!
+                </p>
+                <div class="photo-actions">
+                  <div class="likes">
+                    <button class="action-btn like-btn" data-likes="178">
+                      <i class="far fa-heart"></i>
+                      <span class="like-count">0</span>
+                    </button>
+                  </div>
+                  <div class="action-buttons">
+                    <button class="action-btn">
+                      <i class="fas fa-share"></i>
+                    </button>
+                    <button class="action-btn">
+                      <i class="fas fa-download"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 6 -->
+        <div class="photo-card" data-category="creative-campaigns">
+          <div class="photo-container">
+            <img
+              src="https://www.collegetips.in/images/cl.jpg"
+              alt="Workshops"
+              class="photo-img"
+            />
+            <div class="photo-overlay">
+              <div class="photo-content">
+                <span class="category-badge">
+                  <span class="emoji">🎨</span> Creative Campaigns
+                </span>
+                <h3 class="photo-title">Design Workshop</h3>
+                <p class="photo-description">
+                  Learning new design techniques together
+                </p>
+                <div class="photo-actions">
+                  <div class="likes">
+                    <button class="action-btn like-btn" data-likes="92">
+                      <i class="far fa-heart"></i>
+                      <span class="like-count">0</span>
+                    </button>
+                  </div>
+                  <div class="action-buttons">
+                    <button class="action-btn">
+                      <i class="fas fa-share"></i>
+                    </button>
+                    <button class="action-btn">
+                      <i class="fas fa-download"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 7 -->
+        <div class="photo-card" data-category="work-play">
+          <div class="photo-container">
+            <img
+              src="https://www.collegetips.in/images/chooseus-image-4.jpg"
+              alt="Office relaxation session"
+              class="photo-img"
+            />
+            <div class="photo-overlay">
+              <div class="photo-content">
+                <span class="category-badge">
+                  <span class="emoji">🥳</span> Work Hard, Play Hard
+                </span>
+                <h3 class="photo-title">Gaming Break</h3>
+                <p class="photo-description">
+                  When the work is done, it's time to play!
+                </p>
+                <div class="photo-actions">
+                  <div class="likes">
+                    <button class="action-btn like-btn" data-likes="234">
+                      <i class="far fa-heart"></i>
+                      <span class="like-count">0</span>
+                    </button>
+                  </div>
+                  <div class="action-buttons">
+                    <button class="action-btn">
+                      <i class="fas fa-share"></i>
+                    </button>
+                    <button class="action-btn">
+                      <i class="fas fa-download"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 8 -->
+        <div class="photo-card" data-category="behind-scenes">
+          <div class="photo-container">
+            <img
+              src="https://www.collegetips.in/images/bs2424.jpeg"
+              alt="Content creation process"
+              class="photo-img"
+            />
+            <div class="photo-overlay">
+              <div class="photo-content">
+                <span class="category-badge">
+                  <span class="emoji">🎥</span> Behind-The-Scenes
+                </span>
+                <h3 class="photo-title">Content Creation</h3>
+                <p class="photo-description">
+                  The magic behind our engaging content
+                </p>
+                <div class="photo-actions">
+                  <div class="likes">
+                    <button class="action-btn like-btn" data-likes="145">
+                      <i class="far fa-heart"></i>
+                      <span class="like-count">0</span>
+                    </button>
+                  </div>
+                  <div class="action-buttons">
+                    <button class="action-btn">
+                      <i class="fas fa-share"></i>
+                    </button>
+                    <button class="action-btn">
+                      <i class="fas fa-download"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 9 -->
+        <div class="photo-card" data-category="team-vibes">
+          <div class="photo-container">
+            <img
+              src="https://media.istockphoto.com/id/1444001932/photo/business-lunch.jpg?s=612x612&w=0&k=20&c=MFmAaYl5GL4chJFbSAfrE_tJfy7XiRpphXphpYjIsv4="
+              alt="Team lunch"
+              class="photo-img"
+            />
+            <div class="photo-overlay">
+              <div class="photo-content">
+                <span class="category-badge">
+                  <span class="emoji">🤝</span> Team Vibes
+                </span>
+                <h3 class="photo-title">Lunch & Laughs</h3>
+                <p class="photo-description">
+                  Good food, great company, amazing vibes
+                </p>
+                <div class="photo-actions">
+                  <div class="likes">
+                    <button class="action-btn like-btn" data-likes="167">
+                      <i class="far fa-heart"></i>
+                      <span class="like-count">0</span>
+                    </button>
+                  </div>
+                  <div class="action-buttons">
+                    <button class="action-btn">
+                      <i class="fas fa-share"></i>
+                    </button>
+                    <button class="action-btn">
+                      <i class="fas fa-download"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fullscreen Modal -->
+      <div class="modal" id="photoModal">
+        <div class="modal-content">
+          <button class="modal-close" id="modalClose">
+            <i class="fas fa-times"></i>
+          </button>
+          <div class="modal-image-container">
+            <img
+              src="/placeholder.svg"
+              alt=""
+              id="modalImage"
+              class="modal-image"
+            />
+          </div>
+          <div class="modal-info">
+            <span class="modal-category" id="modalCategory"></span>
+            <h2 class="modal-title" id="modalTitle"></h2>
+            <p class="modal-description" id="modalDescription"></p>
+            <div class="modal-actions">
+              <button class="modal-action-btn like-btn" id="modalLikeBtn">
+                <i class="far fa-heart"></i>
+                <span class="like-count">0</span> likes
+              </button>
+              <div class="modal-action-buttons">
+                <button class="modal-action-btn">
+                  <i class="fas fa-share"></i> Share
+                </button>
+                <button class="modal-action-btn">
+                  <i class="fas fa-download"></i> Download
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
